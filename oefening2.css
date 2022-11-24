@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 20px;
+}
+
+main h1 {
+    font-family: rubik dirt, sans-serif, bold;
+    padding-bottom: 10px;
+}
+
+main p {
+    font-family: figtree, sans-serif;
+}
+
+#sec1 {
+    display: none;
+    background-color: #00811A;
+}
+
+#sec2 {
+    background-color: #0D9D2A;
+}
+
+#sec3 {
+    background-color: #24C024;
+}
+
+#sec4 {
+    background-color: #39D959;
+}
+
+#sec5 {
+    background-color: #68FC85;
+}
+
+@media screen and (min-width: 50rem) {
+    #sec1 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 75rem) {
+    #sec5 {
+        display: none;
+    }
+}

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ccc;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px;
+    border-bottom: 3px solid #000;
+    z-index: 2;
+}
+
+main {
+    width: 600px;
+    margin: 120px auto 0 auto;
+}
+
+main article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #000;
+    border-radius: 5px;
+    padding: 25px;
+    position: relative;
+}
+
+main article img {
+    position: absolute;
+    right: 75px;
+    top: 30px;
+}
+
+main article .number {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+main article .type {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 2px;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+}
+
+main article .grass {
+    background-color: #0eb225;
+}
+
+main article .poison {
+    background-color: #580eb2;
+}
+
+main article .fire {
+    background-color: #ff4500;
+}
+
+main article .flying {
+    background-color: #8a42e1;
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        position: revert;
+    }
+
+    main {
+        margin: 0;
+        width: 100%;
+    }
+
+    main article {
+        width: 100%;
+        background-color: #fff;
+        margin-bottom: 0;
+        border-bottom: 1px solid #CCC;
+        border-radius: 5px;
+        padding: 0;
+    }
+
+    main article img {
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main article .type {
+        visibility: hidden;
+    }
+}
